@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./img/ocean.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  background-image: linear-gradient(to top, rgb(3, 3, 37) 5%, rgb(9, 169, 157));
+  width: 400px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+h4 {
+  font-size: 25px;
+  color: azure;
+  border-bottom: thick double azure;
+}
+
+img {
+  border: 2px solid azure;
+  width: 80%;
+  border-radius: 5px;
+  height: 30%;
+  margin: 0;
+}
+
+#bellow-cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#music-name {
+  font-size: 20px;
+  font-weight: bolder;
+  color: azure;
+}
+
+#singer-name {
+  font-size: 13px;
+  color: rgb(139, 153, 156);
+}
+
+#progress-bar {
+  background-color: rgb(139, 153, 156);
+  height: 2px;
+  border-radius: 15px;
+  width: 270px;
+  margin-bottom: 1em;
+}
+
+#current-bar {
+  --progress: 0%;
+  background-color: azure;
+  height: inherit;
+  border-radius: 15px;
+  width: var(--progress);
+}
+
+#progress-container {
+  height: 30px;
+  cursor: pointer;
+}
+
+#btn-music {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
+  outline: none;
+}
+
+.button {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.button-active {
+  color: rgb(20, 233, 55);
+}
+
+#play {
+  font-size: 45px;
+}
+
+button {
+  background-color: inherit;
+  color: azure;
+  border: none;
+  outline: none;
+}
+
+#time-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: smaller;
+  color: azure;
+}
+@media all and (max-width: 1030px) {
+  .container {
+    width: 380px;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    width: 360px;
+  }
+}
+@media all and (max-width: 430px) {
+  .container {
+    width: 80%;
+  }
+}
+@media all and (max-width: 360px) {
+  .container {
+    width: 80%;
+  }
+}
